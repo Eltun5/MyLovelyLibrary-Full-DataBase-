@@ -1,0 +1,103 @@
+Author_Genres
+id	author_id	genre_id	created_at	updated_at
+1	1	        1		
+2	2	        1		
+3	3	        1
+
+
+		
+Authors
+author_id	first_name	last_name	date_of_birth	date_of_death	country_id	biography	awards	website_url	photo_url	created_at	updated_at
+1	        Ernest	        Hemingway	01-01-1899	01-01-1961	3						
+2	        Dostoyevsky	Fyodor	        11-11-1821	09-02-1881	4						
+3	        Atay	        Oğuz	        12-10-1934	13-12-1977	2	
+
+
+					
+Book_Authors
+book_author_id	book_id	author_id	create_date	update_date
+1	1	1		
+2	2	2		
+3	3	3		
+
+
+
+Books
+book_id	book_title	description	publication_year	genre_id	country_id	publisher_id	created_at	updated_at
+1	The Old Man and the Sea		01-01-1950	        1	        3	         1		
+2	The Brothers Karamazov		01-01-1970	        4	        4	         2		
+3	Tutunamayanlar		        01-01-1971	        1	        2	         3	
+
+
+
+	
+Borrowings
+borrowing_id	member_id	book_id	    staff_id	borrowed_at	due_date	returned_at
+1	        1	        2	    1	        10-11-2024	30-11-2024	03-12-2024
+2	        2	        3	    3	        01-10-2024	21-10-2024	30-12-2024
+3	        3	        1	    2	        05-01-2024	25-01-2024	15-01-2024
+
+
+
+
+Countries
+country_id	country_name	iso_code	iso_code_3	population	currency	phone_code	flag_url	created_at	updated_at
+1	        Azerbaijan	AZ	        AZE	        10000	         AZN	         +994			
+2	        Turkish	        TR	        TUR	        100000	         TL	         +90			
+3	        America 	US	        USA	        100000	         USD	         +1			
+4	        Russia	        RU	        RUS	        100000	         RUB	         +7	
+
+
+
+		
+Fines
+fine_id	borrowing_id	amount	issued_at	paid_at
+1	1	        15	05-12-2024	10-12-2024
+2	2	        365	30-12-2024	31-12-2024
+3	3	        0	15-01-2024	
+
+
+
+
+
+
+Genres
+genre_id	genre_name	description	parent_genre_id	created_at	updated_at
+1	        fiction				
+2	        spy fiction		        1		
+3	        superhero fiction		1		
+4	        suspense			
+
+
+	
+Members
+member_id	first_name	last_name	email	                phone	           address	created_at	updated_at
+1	        Eltun	        Aslanov	        eltunaslanov@gmail.com	+994 70 721 97 89			
+2	        Eltun	        Aslanov	        eltunaslanov@gmail.com	+994 70 721 97 89			
+3	        Eltun	        Aslanov	        eltunaslanov@gmail.com	+994 70 721 97 89			
+4	        Eltun	        Aslanov	        eltunaslanov@gmail.com	+994 70 721 97 89			
+5	        Eltun	        Aslanov	        eltunaslanov@gmail.com	+994 70 721 97 89		
+6	        Eltun	        Aslanov	        eltunaslanov@gmail.com	+994 70 721 97 89
+
+
+
+
+		
+Publisher
+publisher_id	name	address	website_url	email	                phone_number	  established_at	created_at	updated_at
+1	        Eltun			        eltunaslanov@gmail.com	+994 70 721 97 89			
+2	        Eltun			        eltunaslanov@gmail.com	+994 70 721 97 89			
+3	        Eltun			        eltunaslanov@gmail.com	+994 70 721 97 89	
+
+
+
+
+
+		
+Staffs
+staff_id	first_name	last_name	email	                phone	                salary	fin_code	address	created_at	updated_at
+1	        Eltun	        Aslanov	        eltunaslanov@gmail.com	+994 70 721 97 89	10000	123abcd			
+2	        Eltun	        Aslanov	        eltunaslanov@gmail.com	+994 70 721 97 89	10000	123abcd		
+3	        Eltun	        Aslanov	        eltunaslanov@gmail.com	+994 70 721 97 89	10000	123abcd			
+4	        Eltun	        Aslanov	        eltunaslanov@gmail.com	+994 70 721 97 89	10000	123abcd			
+5	        Eltun	        Aslanov	        eltunaslanov@gmail.com	+994 70 721 97 89	10000	123abcd	
